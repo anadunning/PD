@@ -1,0 +1,35 @@
+h1, h2 {
+    text-align: center;
+}
+
+.main_table {
+    text-align: center;
+    padding: 20px;
+    width: 100%
+
+}
+
+.main_container {
+    padding: 50px;
+    text-align: center;
+}
+
+.btn-voltar {
+    color: rgb(80, 154, 240);
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration-color: gold;
+
+}
+
+.btn-voltar:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+.voltar {
+      padding: 20px;
+      margin-left: 190px;
+      text-decoration-color: gold;
+  }

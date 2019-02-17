@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Mini Projeto 4 - REST - Cliente</title>
+
+    <!-- Este script é somente para preencher e limpar os campos antes de inserir informação -->
+    <script type="text/javascript">
+        var texto = "Informe o id da noticia";
+
+        function preencher(){
+            var valor = document.getElementById("consultar").value;
+
+            if(valor == ""){
+                document.getElementById("consultar").value = texto;
+            }
+        }
+
+        function limpar(){
+            var valor = document.getElementById("consultar").value;
+
+            if(valor == texto){
+                document.getElementById("consultar").value = '';
+            }
+        }
+    </script>
+</head>
+
+<body onload="preenche();">
+
+        <nav class="navbar navbar-light bg warning mb-4">
+                <span class="navbar-brand mb-0 h1">Mini Projeto 4 - REST - Cliente</span>
+        </nav>
+    
+            <h2>Atualizar Notícia</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="firstSection">
+                        <form class = "border p-4 mb-4" id = "form" method="get" action="">
+                            <div class = "form-group">
+                                    <h4>Consultar Notícia:</h4>
+                                    <label>Id</label>
+                                    <input type = "text" onclick="limpar();" onblur="preencher();"  class = "form-control" id = "consultar" value="">
+                            </div>
+                            
+                            <button type = "submit" id = "btn-consultar" class = "btn btn-primary">Consultar</button>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="firstSection">
+                            <form class = "border p-4 mb-4" id = "form" method="post" action="">
+
+                                <div class = "form-group">
+                                        <h4>Atualizar o Título da Notícia:</h4>
+                                        <label>Novo título</label>
+                                        <input type = "text" class = "form-control" id = "atualizar" value="">
+                                </div>
+                                
+                                <button type = "submit" id = "btn-atualizar" class = "btn btn-primary">Atualizar Título</button>
+        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="voltar">
+                        <a class="btn btn-voltar" href="index.html">Voltar para o Início</link>
+                </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
